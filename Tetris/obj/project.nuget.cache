@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZkepZ280oeQaPvj5uS5vsnLz9FgxtfL0YpML5nv6MmKToCahDobr9C9o/24T3M0F/6EK462rs0fj9A7HwQFgOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Egor\\Desktop\\Tetris\\Tetris\\Tetris.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Egor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
