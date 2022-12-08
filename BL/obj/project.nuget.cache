@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MHTKBxtjzL4FNAyyAJEmv06VlxYMu0h7wXMUO/J+PIaGY3q7++Tz+gPh3ERGRpDGLD9DajzJRIORtGGfxAOUNA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Egor\\Desktop\\Tetris\\BL\\BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Egor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

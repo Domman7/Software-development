@@ -272,7 +272,7 @@
         this.nextPiece = this.createPiece();
     }
 
-} 
+}
 
 class View {
     static colors = {
@@ -329,7 +329,7 @@ class View {
     }
 
     renderPauseScreen() {
-        this.context.fillStyle = 'rgba(0,0,0,0.25)';
+        this.context.fillStyle = 'rgba(255,255,255,0.9)';
         this.context.fillRect(0, 0, this.width, this.height);
 
         this.context.fillStyle = 'black';
@@ -365,29 +365,54 @@ class View {
                 if (block) {
                     this.renderBlock(
                         this.fieldX + (x * this.blockWidth),
-                        this.fieldY + (y * this.blockWidth),
+                        this.fieldY + (y * this.blockHeight),
                         this.blockWidth,
-                        this.blockHeight, View.colors[block]
+                        this.blockHeight,
+                        View.colors[block]
                     );
                 }
+
+                if (x != 0) {
+                    this.context.strokeStyle = "rgba(207, 207, 207, 0.1)";
+                    this.context.lineWidth = 1;
+
+                    this.context.beginPath();
+                    this.context.moveTo(this.fieldX + (x * this.blockWidth), this.fieldY);
+                    this.context.lineTo(this.fieldX + (x * this.blockWidth), this.fieldHeight - this.fieldBorderWidth);
+                    this.context.stroke();
+                }
+
+                if (y != 0) {
+                    this.context.strokeStyle = "rgba(207, 207, 207, 0.1)";
+                    this.context.lineWidth = 1;
+
+                    this.context.beginPath();
+                    this.context.moveTo(this.fieldX, this.fieldY + (y * this.blockHeight));
+                    this.context.lineTo(this.fieldWidth - this.fieldBorderWidth, this.fieldY + (y * this.blockHeight));
+                    this.context.stroke();
+                }
+
             }
         }
 
         this.context.strokeStyle = "black";
         this.context.lineWidth = this.fieldBorderWidth;
-        this.context.strokeRect(0, 0, this.fieldWidth, this.fieldHeight);
+        this.context.strokeRect(this.fieldX / 2, this.fieldY / 2, this.fieldWidth - this.fieldX, this.fieldHeight - this.fieldY);
     }
 
     renderPanel({ level, score, lines, nextPiece }) {
         this.context.textAlign = 'start';
         this.context.textBaseline = 'top';
-        this.context.fillStyle = 'black';
-        this.context.font = '14px "Ariel"';
+        this.context.fillStyle = '#2f4f4f';
+        this.context.font = '20px "Ariel"';
 
-        this.context.fillText(`Score: ${score}`, this.panelX, this.panelY);
-        this.context.fillText(`Lines: ${lines}`, this.panelX, this.panelY + 24);
-        this.context.fillText(`Level: ${level}`, this.panelX, this.panelY + 48);
-        this.context.fillText('Next:', this.panelX, this.panelY + 96);
+        this.context.fillText(`Очки: ${score}`, this.panelX, this.panelY + this.panelHeight - 24);
+        this.context.fillText(`Линии: ${lines}`, this.panelX, this.panelY + this.panelHeight - 58);
+        this.context.fillText(`Уровень: ${level}`, this.panelX, this.panelY + this.panelHeight - 92);
+
+        this.context.font = '24px "Ariel"';
+
+        this.context.fillText('Далее:', this.panelX, this.panelY);
 
         for (let y = 0; y < nextPiece.blocks.length; y++) {
             for (let x = 0; x < nextPiece.blocks[y].length; x++) {
@@ -395,10 +420,10 @@ class View {
 
                 if (block) {
                     this.renderBlock(
-                        this.panelX + (x * this.blockWidth * 0.5),
-                        this.panelY + 100 + (y * this.blockHeight * 0.5),
-                        this.blockWidth * 0.5,
-                        this.blockHeight * 0.5,
+                        this.panelX + (x * this.blockWidth * 0.75),
+                        this.panelY + 24 + (y * this.blockHeight * 0.75),
+                        this.blockWidth * 0.75,
+                        this.blockHeight * 0.75,
                         View.colors[block]
                     );
                 }
@@ -411,8 +436,8 @@ class View {
         this.context.strokeStyle = 'black';
         this.context.lineWidth = 2;
 
-        this.context.fillRect(x, y, width, height);
-        this.context.strokeRect(x, y, width, height);
+        this.context.fillRect(x + this.context.lineWidth / 2, y + this.context.lineWidth / 2, width - this.context.lineWidth, height - this.context.lineWidth);
+        this.context.strokeRect(x + this.context.lineWidth / 2, y + this.context.lineWidth / 2, width - this.context.lineWidth, height - this.context.lineWidth);
     }
 }
 

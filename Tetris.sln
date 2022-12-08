@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{8DEDF91B-5199-40A9-8E5B-BB7038C0A165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tetris", "Tetris\Tetris.csproj", "{8DEDF91B-5199-40A9-8E5B-BB7038C0A165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{46CEBFF4-A6A8-4CD2-895A-9AF3D0491183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{EAF22333-2CBE-4211-8A23-89D14C748471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{DD59B1C8-072E-46A6-B2D6-55205CC3F4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{42C8A222-9E95-41EC-B1E7-7F0A7464E6DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{8DEDF91B-5199-40A9-8E5B-BB7038C0A165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DEDF91B-5199-40A9-8E5B-BB7038C0A165}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DEDF91B-5199-40A9-8E5B-BB7038C0A165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CEBFF4-A6A8-4CD2-895A-9AF3D0491183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CEBFF4-A6A8-4CD2-895A-9AF3D0491183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CEBFF4-A6A8-4CD2-895A-9AF3D0491183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CEBFF4-A6A8-4CD2-895A-9AF3D0491183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF22333-2CBE-4211-8A23-89D14C748471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF22333-2CBE-4211-8A23-89D14C748471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF22333-2CBE-4211-8A23-89D14C748471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF22333-2CBE-4211-8A23-89D14C748471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD59B1C8-072E-46A6-B2D6-55205CC3F4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD59B1C8-072E-46A6-B2D6-55205CC3F4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD59B1C8-072E-46A6-B2D6-55205CC3F4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD59B1C8-072E-46A6-B2D6-55205CC3F4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C8A222-9E95-41EC-B1E7-7F0A7464E6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C8A222-9E95-41EC-B1E7-7F0A7464E6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C8A222-9E95-41EC-B1E7-7F0A7464E6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C8A222-9E95-41EC-B1E7-7F0A7464E6DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

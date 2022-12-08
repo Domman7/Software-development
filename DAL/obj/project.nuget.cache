@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2wM6h7XjpjJnKOWrl5xtpHNP1ujWSjprZIK1qNaP+6gR2tHgmzUhInrnM7iuRuK8ApLHbwmFs1vORP9nj5EkQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Egor\\Desktop\\Tetris\\DAL\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Egor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
