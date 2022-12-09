@@ -1,0 +1,5 @@
+C:\Users\Egor\Desktop\Tetris\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\Egor\Desktop\Tetris\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Egor\Desktop\Tetris\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\Egor\Desktop\Tetris\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\Egor\Desktop\Tetris\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
