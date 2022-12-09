@@ -9,10 +9,7 @@ namespace DAL
     public class UsersDal : IUsersDal
     {
         private List<User> users = new List<User>() {
-            new User() { Id = 1, Name = "Ivan", Age = 20, Phone = "1" },
-            new User() { Id = 2, Name = "Anton", Age = 21, Phone = "2" },
-            new User() { Id = 3, Name = "Egor", Age = 22, Phone = "3" },
-            new User() { Id = 4, Name = "Andrew", Age = 24, Phone = "4" },
+            new User() { Id = 1, Name = "Ivan", Login = "QQQ", Password= "12345", RegistrationDate = new DateTime(2015, 7, 20)}
         };
 
         public User GetById(int id)
